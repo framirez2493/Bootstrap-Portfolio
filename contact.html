@@ -12,44 +12,99 @@
     <div>
         <div class="container">
             <!-- Section 1: Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    
-    <!-- Our brand / logo -->
-    <a class="navbar-brand" href="#">Fernando Ramirez</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <!-- Collapsible button -->
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav ml-auto">
-    
-    <!-- The links of our navbar -->
-    <li class="nav-item active">
-      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-link" href="https://en.wikipedia.org/wiki/Guadalajara">Hometown</a>
-    </li>
-    
-    <!-- a Dropdown menu -->
-    <li class="nav-item dropdown">
-    
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown
-      </a>
-    
-      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="index.html">bio</a>
-        <a class="dropdown-item" href="portafolio.html">portafolio</a>
-        <a class="dropdown-item" href="contact.html">contact</a>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Fernando Ramirez</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto"><!-- change to ml if u want right sided or mr if want original layout-->
+                       
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+      
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+      
+                        <li class="nav-item dropdown">
+      
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="index.html">Bio</a>
+                            <a class="dropdown-item" href="portafolio.html">Porta</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="contact.html">contact</a>
+                          </div>
+      
+      </li>
+      </ul>
+                      <!--in case u want asearch bar-->
+                      <!--<form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>-->
       </div>
-    
-    </li>
-    </ul>
-    </div>
-    </nav>
+      <!-- Navbar content -->
+      </nav>
+
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Country</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Mexico</option>
+          <option>United States</option>
+          <option>Russia</option>
+          <option>Mars</option>
+          
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect2">Reason</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2">
+          <option>IT support</option>
+          <option>Moral support</option>
+          <option>Payments</option>
+          <option>General question</option>
+          
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Feedback</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+      <form>
+        <div class="form-row align-items-center">
+          <div class="col-auto my-1">
+            <label class="mr-sm-2" for="inlineFormCustomSelect">Response Preference</label>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+              <option selected>Choose...</option>
+              <option value="1">Email</option>
+              <option value="2">Phone</option>
+              <option value="3">mail</option>
+            </select>
+          </div>
+          <div class="col-auto my-1">
+            <div class="custom-control custom-checkbox mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+              <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+            </div>
+          </div>
+          <div class="col-auto my-1">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </form>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
