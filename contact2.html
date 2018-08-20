@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+</html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>comments</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Fernando Ramirez</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <!-- change to ml if u want right sided or mr if want original layout-->
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="index2.html">Bio</a>
+                            <a class="dropdown-item" href="portafolio2.html">Porta</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" id="c" href="contact2.html">contact</a>
+                        </div>
+
+                    </li>
+                </ul>
+                <!--in case u want asearch bar-->
+                <!--<form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>-->
+            </div>
+            <!-- Navbar content -->
+        </nav>
+        <div class="jumbotron" style="background-color: black; color: white">
+                <h1 class="text-center">contact me</h1>
+    
+    
+            </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Add train from card margin button 4 padding 4 -->
+                <div class="card mb-4 p-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Add comment</h3>
+                        <!-- Entry Form bootstrap-->
+                        <form>
+                            <div class="form-group row">
+                                <label for="name-input">Name</label>
+                                <input class="form-control" id="name-input" placeholder="" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="email-input">email</label>
+                                <input class="form-control" id="email-input" placeholder="" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="reason-input">reaon for contacting us?</label>
+                                <select class="form-control" id="reason-input">
+                                    <option>Porential interview</option>
+                                    <option>Partnership Offer</option>
+                                    <option>Job Offer</option>
+                                    <option>Other</option>
+
+                                </select>
+                            </div>
+                            <div class="form-group row">
+                                <label for="comment-input">comment (in minutes)</label>
+                                <input class="form-control" id="comment-input" placeholder="" type="text">
+                            </div>
+                            <button class="btn btn-primary float-right" id="add-comment-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--<div class="row">  
+            <div class="col-md-12">
+
+                <div class="card mb-4" id="xx">
+                        <div class="card-body">
+                            <h3 class="card-title">train</h3>
+                            <table class="table table-sm table-hover" id='user-table'>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        
+                                        <th scope="col">email</th>
+                                        <th scope="col">reason</th>
+                                        <th scope="col">comment</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+    </div>
+</body>
+<script src="c.js"></script>
+
+</html>
