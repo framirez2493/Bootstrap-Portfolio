@@ -10,6 +10,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
@@ -17,12 +18,6 @@
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
 </head>
-<style>
-     .container{
-    height: 110vh;
-    width: 110vh;
-  }
-</style>
 
 
 <body>
@@ -31,7 +26,7 @@
 
 
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
             <a class="navbar-brand" href="#">Fernando Ramirez</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -72,13 +67,13 @@
             <!-- Navbar content -->
         </nav>
         <div class="jumbotron" style="background-color: black; color: white">
-                <h1 class="text-center">contact me</h1>
+                <h1 class="text-center">Contact me</h1>
     
     
             </div>
 
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12">
                 <!-- Add train from card margin button 4 padding 4 -->
                 <div class="card mb-4 p-4">
                     <div class="card-body">
@@ -90,11 +85,11 @@
                                 <input class="form-control" id="name-input" placeholder="" type="text">
                             </div>
                             <div class="form-group row">
-                                <label for="email-input">email</label>
+                                <label for="email-input">Email</label>
                                 <input class="form-control" id="email-input" placeholder="" type="text">
                             </div>
                             <div class="form-group row">
-                                <label for="reason-input">reaon for contacting us?</label>
+                                <label for="reason-input">Reason for contacting?</label>
                                 <select class="form-control" id="reason-input">
                                     <option>Porential interview</option>
                                     <option>Partnership Offer</option>
@@ -104,15 +99,24 @@
                                 </select>
                             </div>
                             <div class="form-group row">
-                                <label for="comment-input">comment (in minutes)</label>
+                                <label for="comment-input">Comment</label>
                                 <input class="form-control" id="comment-input" placeholder="" type="text">
                             </div>
                             <button class="btn btn-primary float-right" id="add-comment-btn">Submit</button>
+                           
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+         <!--Add buttons to initiate auth sequence and sign out-->
+   
+    
+    </div>
+
+  
+    
+  
 
 
 
@@ -143,6 +147,7 @@
 
     </div>
 </body>
-<script src="c.js"></script>
+<script src="assets/java/c.js"></script>
+
 
 </html>

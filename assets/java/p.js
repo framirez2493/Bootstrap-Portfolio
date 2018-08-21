@@ -14,13 +14,15 @@ var database = firebase.database();
 $("#add-comment-btn").on("click", function (event) {
     event.preventDefault();
   
-    var feedback = $("#comment-input").val().trim();//tnmae= any value nput it
+    var feedback = $("#comment-input").val().trim();
+    var Nombre = $("#name-input").val().trim();//tnmae= any value nput it
   
        
   
     // Creates local "temporary" object for holding employee data
     var commEnt = {
-      comment: feedback
+      comment: feedback,
+      name: Nombre
     };
   
     // Uploads train data to the database
@@ -34,6 +36,8 @@ $("#add-comment-btn").on("click", function (event) {
     // Clears all of the text-boxes
     
     $("#comment-input").val("");
+    
+    $("#name-input").val("");
   });
    
   
@@ -45,6 +49,8 @@ $("#add-comment-btn").on("click", function (event) {
   
     var feedback = childSnapshot.val().comment;
     
+    var Nombre = childSnapshot.val().name;
+    
   
    
 
@@ -52,7 +58,9 @@ $("#add-comment-btn").on("click", function (event) {
      //Create the new row
     var newRow = $("<tr>").append(
      
+    $("<td>").text(Nombre),
      $("<td>").text(feedback),
+     
     );
  
   //  // Append the new row to the table
