@@ -105,6 +105,12 @@ var database = firebase.database();
   //  // Append the new row to the table
  //   $("#user-table > tbody").append(newRow);
   });
+  $.get("https://api.liveformhq.com/v1/forms/f5f05e7f-1c6d-480c-9d51-84bf59bbb1c6/messages", {
+    api_key: "453e6f5d-fe05-46bf-aa3e-2d6cf52f215e"
+  },
+  function(messages) {
+    console.log(messages)
+  })
   
  
   
