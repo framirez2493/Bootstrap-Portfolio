@@ -1,0 +1,87 @@
+[debug] [2018-08-22T07:08:38.420Z] ----------------------------------------------------------------------
+[debug] [2018-08-22T07:08:38.422Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\fer06\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-08-22T07:08:38.422Z] CLI Version:   4.2.0
+[debug] [2018-08-22T07:08:38.422Z] Platform:      win32
+[debug] [2018-08-22T07:08:38.422Z] Node Version:  v8.10.0
+[debug] [2018-08-22T07:08:38.423Z] Time:          Wed Aug 22 2018 00:08:38 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-08-22T07:08:38.423Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-22T07:08:38.430Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-08-22T07:08:38.430Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\fer06\UCICODE_classProjects\Bootstrap-Portfolio
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-08-22T07:09:10.892Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-22T07:09:10.892Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-08-22T07:09:11.244Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-22T07:09:11.253Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ 
+[debug] [2018-08-22T07:09:12.100Z] <<< HTTP RESPONSE 500
+[debug] [2018-08-22T07:09:12.100Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, An unknown error occurred. Please contact support.
+[debug] [2018-08-22T07:09:12.269Z] Error Context: {
+  "body": {
+    "error": {
+      "code": "UNKNOWN_ERROR",
+      "message": "An unknown error occurred. Please contact support."
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": "UNKNOWN_ERROR",
+        "message": "An unknown error occurred. Please contact support."
+      }
+    },
+    "headers": {
+      "server": "nginx",
+      "date": "Wed, 22 Aug 2018 07:09:11 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "97",
+      "connection": "close",
+      "x-content-type-options": "nosniff"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "admin.firebase.com",
+        "port": 443,
+        "hostname": "admin.firebase.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1/projects",
+        "path": "/v1/projects",
+        "href": "https://admin.firebase.com/v1/projects"
+      },
+      "method": "GET"
+    }
+  }
+}
+
+       <p> Welcome to my portfolio. in this portfolio you can find some of the Real projects i have deveoped.
+                    you will find a brief description of the project and its main components as well as a link to put in to action. feel free to add a
+                    comment in the comments section for improvements or questions. also on the top bar is a lonk to my Github
+                    account so you can take a look into my projects that start from basic to coplex ones.
+                    thank you and enjoy your journey into my portfolio below there is an slide show with preview images of my projects. 
+                    check it out and enjoy.</p>

@@ -14,4 +14,13 @@
    h4{
      font-weight: bolder;
    }
+
+   #vv {
+     margin-bottom: 200px;
+   }
+   #photo{
+     width: 350px;
+     height: 350px;
+     margin-top: 50px;
+   }
    
