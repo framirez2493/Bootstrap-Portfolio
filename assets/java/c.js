@@ -1,39 +1,16 @@
-firebase.auth().signInWithRedirect(provider);
-firebase.auth().getRedirectResult().then(function(result) {
-  if (result.credential) {
-    // This gives you a Google Access Token. You can use it to access the Google API.
-    var token = result.credential.accessToken;
-    // ...
-  }
-  // The signed-in user info.
-  var user = result.user;
-}).catch(function(error) {
-  // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message;
-  // The email of the user's account used.
-  var email = error.email;
-  // The firebase.auth.AuthCredential type that was used.
-  var credential = error.credential;
-  // ...
-});
-App.initializeApp()
+var config = {
+  apiKey: "AIzaSyCQMOCI_G8buo_ZsD19AbaFRBbPHZOnPqc",
+  authDomain: "portafoliofr7.firebaseapp.com",
+  databaseURL: "https://portafoliofr7.firebaseio.com",
+  projectId: "portafoliofr7",
+  storageBucket: "portafoliofr7.appspot.com",
+  messagingSenderId: "28348492164"
+};
 
-// 1. Initialize Firebase
- // Initialize Firebase
- // Initialize Firebase
- var config = {
-    apiKey: "AIzaSyCQMOCI_G8buo_ZsD19AbaFRBbPHZOnPqc",
-    authDomain: "portafoliofr7.firebaseapp.com",
-    databaseURL: "https://portafoliofr7.firebaseio.com",
-    projectId: "portafoliofr7",
-    storageBucket: "portafoliofr7.appspot.com",
-    messagingSenderId: "28348492164"
-  };
-  
 firebase.initializeApp(config);
 
 var database = firebase.database();
+
   
 //var clickCounter = 0;
 
@@ -74,17 +51,19 @@ var database = firebase.database();
     var comment = $("#comment-input").val().trim();//frequency= any value nput it
   
    
-  
+ // var email = 'fer0624@gmail.com'
     // Creates local "temporary" object for holding employee data
-    var newEmp = {
+    var Contact = {
       Username: UName,
       email: tEmail,
       search: reason,
       feedback: comment
     };
+   // document.write('<a href="mailto:' + email + '?subject=' +Contact+ '&body=' +Contact+ '">' + 'Click here to send email as well' + '<'+'/a>')
+   
   
     // Uploads train data to the database
-    database.ref().push(newEmp);
+    database.ref().push(Contact);
   
     // Logs everything to console
     
@@ -113,23 +92,16 @@ var database = firebase.database();
    
 
   
-    // Create the new row
- ////   var newRow = $("<tr>").append(
- //     $("<td>").text(UName),
- //     $("<td>").text(tEmail),//for matted for standard time
- //     $("<td>").text(reason),
- //     $("<td>").text(comment),
- //    );
- // 
-  //  // Append the new row to the table
- //   $("#user-table > tbody").append(newRow);
+//Create the new row
+   var newRow = $("<tr>").append(
+   $("<td>").text(UName),
+   $("<td>").text(tEmail),//for matted for standard time
+   $("<td>").text(reason),
+   $("<td>").text(comment),   ); // Append the new row to the table
+   $("#user-table > tbody").append(newRow);
   });
-  $.get("https://api.liveformhq.com/v1/forms/f5f05e7f-1c6d-480c-9d51-84bf59bbb1c6/messages", {
-    api_key: "453e6f5d-fe05-46bf-aa3e-2d6cf52f215e"
-  },
-  function(messages) {
-    console.log(messages)
-  })
+ 
+ 
 
  
   
