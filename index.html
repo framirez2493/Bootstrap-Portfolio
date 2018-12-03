@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
+<style>
+.card{
+  margin-bottom: 50px;
+
+}
+
+</style>
 
 <body>
   <div class="container">
@@ -30,10 +37,10 @@
                       Dropdown
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="index.html">Bio</a>
-                      <a class="dropdown-item" href="portfolio.html">portafolio</a>
+                      <a class="dropdown-item" href="index.html">Home</a>
+                      <a class="dropdown-item" href="portfolio.html">Portfolio</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="contact.html">Contact</a>
+                      <a class="dropdown-item" href="contact.html">Comments</a>
                     </div>
 
 </li>
@@ -70,27 +77,36 @@
         </div>
       
       <div class="row">
-        <div class="col-sm-2">
-           
+          <div class="col-sm-8">
+              <ul class="list-unstyled">
+                  <h4>goals!</h4>
+                  <ul>
+                    <li>Become a fullstack developer by the end of the year, and secure a job in the industry around orange county.</li>
+                    <li> learn block-chain to process crypto currency, as well as being able to mine it.</li>
+                    <li> Be involved in a life changing project that can benifit us all</li>
+                  </ul>
+          </div>
+        <div class="col-sm-4">
+          <h4>Contact me</h4>
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./assets/7.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Contact</h5>
+                <p class="card-text">Here is my contact info, feel free to reach me.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Mobile: 949-373-6588</li>
+                <li class="list-group-item">Email <a href= "fer0624@gmail.com" class="card-link">Fer0624@gmail.com</a></li>
+              </ul>
+              <div class="card-body">
+                <a href="contact.html" class="card-link">Questions</a>
+                <a href="https://www.linkedin.com/in/fernando-ramirez-08bb14134/" class="card-link">linkedin</a>
+              </div>
+            </div>
         </div>
-        <div class="col-sm-8">
-            <ul class="list-unstyled">
-                <h4>goals!</h4>
-                <ul>
-                  <li>Become a fullstack developer by the end of the year, and secure a job in the industry around orange county.</li>
-                  <li> learn block-chain to process crypto currency, as well as being able to mine it.</li>
-                  <li> Be involved in a life changing project that can benifit us all</li>
-                </ul>
-        </div>
-        <div class="col-sm-2"></div>
-      </div>
-      <h3>my events</h3>
-      <button type="button" class="btn btn-outline-success" id="authorize_button" style="display: none;">Authorize</button>
-      <button type="button" class="btn btn-outline-success" id="signout_button" style="display: none;">Sign Out</button>
       
-  
-      <pre id="content"></pre>
-
+      </div>
+      
   </div>
   <script type="text/javascript">
     // Client ID and API key from the Developer Console
